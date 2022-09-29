@@ -43,7 +43,7 @@ git merge -no-ff another_branch
 ```
 
 
-- 回退操作
+- 回退操作，使用git reflog 可以查看所有的提交，然后根据这些hash值，使用reset命令回退，--hard,--soft,--mixed(默认),--hard会清空暂存区和工作目录下的所有内容，--soft会保留，--mix会保留工作目录，而清空暂存区。
 
 ``` c
 git reset hash_of_log_commit

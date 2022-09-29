@@ -48,3 +48,7 @@ git merge -no-ff another_branch
 ``` c
 git reset hash_of_log_commit
 ```
+- 首先可以使用git remote add origin `https://github.com/`添加一个名为origin的远程仓库
+
+- git push 和git pull 从远程仓库拉去和推送相应的内容
+- 有的时候，会出现`fatal: refusing to merge unrelated histories`的提示，两个完全不相关的节点，Git不知道如何合并，可以在后面加上--allow-unrelated-histories参数，强制合并。
